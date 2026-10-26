@@ -20,7 +20,7 @@ pip install -r requirements.txt
 Copy-Item .env.example .env
 uvicorn app.main:app --reload
 ```
-API docs: http://127.0.0.1:8000/docs
+
 
 ## Run the frontend (second terminal)
 ```powershell
@@ -29,7 +29,7 @@ npm install
 Copy-Item .env.example .env
 npm run dev
 ```
-Frontend: http://localhost:5173
+
 
 Create an account in the app. Financial records are scoped to the authenticated user.
 AI features require `OPENAI_API_KEY` in `backend/.env`; core expense categorization has a deterministic fallback and clearly indicates when AI is unavailable.
